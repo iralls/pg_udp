@@ -1,0 +1,8 @@
+Simple UDP server, test against this locally to see whether the stored procedure works
+
+gcc -o server server.c
+
+./server
+
+to verify it works without pg,
+echo "hi" | nc -4u -w1 127.0.0.1 32000
